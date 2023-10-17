@@ -15,15 +15,15 @@ Basic Architecture:
 The UI uses the Firebase SDK to create users and obtain an auth token from Firebase Auth. We then use the token to make all other API requests to the backend that Node JS middleware validates.
 There are a couple endpoints configured in Node JS
 
-# app.post("/user")
-# app.get("/patients")
-# app.put("/patient/:id")
-# app.post("/patient")
-# app.delete("/patient/:id"
+#### app.post("/user")
+####  app.get("/patients")
+####  app.put("/patient/:id")
+####  app.post("/patient")
+####  app.delete("/patient/:id"
 
 We use two tables in Firestore, Patients and Users with the following schemas
 
-# Patient
+#### Patient
 firstName: string;
 middleName: string;
 lastName: string;
@@ -36,7 +36,7 @@ patientId?: string;
 profilePhoto?: File;
 additionalFields?: {};
 
-# NewUser
+#### NewUser
 email: string;
 uid: string;
 
